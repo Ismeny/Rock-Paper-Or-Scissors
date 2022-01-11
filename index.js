@@ -28,3 +28,32 @@ function getComputerChoice() {
 }
 //should print 'rock'
 console.log(getComputerChoice());
+
+// function expression 
+const determineWinner = function (userChoice, computerChoice) {
+    //comparing userchoice to computer choice to determine winner
+    if (userChoice === computerChoice) {
+        return "The game is a tie!"
+    } if (userChoice === 'rock') {
+        if (computerChoice === 'paper') {
+            return 'The computer won!'
+        } else {
+            return 'You won!'
+        }
+    } if (userChoice === 'paper') {
+        if (computerChoice === 'scissors') {
+            return 'The computer won!'
+        } else {
+            return 'You won!'
+        }
+    } if (userChoice === 'scissors') {
+        if (computerChoice === 'rock') {
+            return 'The computer won!'
+        } else {
+            return 'You won!'
+        }
+    }
+    
+}
+// should print the game is a tie
+console.log(determineWinner('scissors', 'scissors'));
