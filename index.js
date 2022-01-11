@@ -9,15 +9,13 @@ const getUserChoice = userInput =>  {
         console.log('There was an error with your choice!')
     };
 };
-// should print 'paper'
-console.log(getUserChoice('PAPER'))
 
 //function declaration FOR COMPUTER to choose rock, paper, or scissors
 function getComputerChoice() {
     // get a random whole number between 0 and 2
     Math.random(Math.floor() * 3)
     // then depending on the number return either rock, paper or scissors
-    switch (1) {
+    switch (0) {
         case 0: 
          return 'rock';
         case 1:
@@ -26,8 +24,6 @@ function getComputerChoice() {
          return 'scissors'
     }
 }
-//should print 'rock'
-console.log(getComputerChoice());
 
 // function expression 
 const determineWinner = function (userChoice, computerChoice) {
@@ -55,8 +51,6 @@ const determineWinner = function (userChoice, computerChoice) {
     }
     
 }
-// should print the game is a tie
-console.log(determineWinner('scissors', 'scissors'));
 
 // function to start the game and log results 
 function playGame() {
