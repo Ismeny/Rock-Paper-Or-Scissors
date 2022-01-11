@@ -18,10 +18,13 @@ function getComputerChoice() {
     switch (randomNumber) {
         case 0: 
          return 'rock';
+         break;
         case 1:
          return 'paper';
+         break;
         case 2: 
          return 'scissors'
+         break;
     }
 }
 
@@ -48,13 +51,15 @@ const determineWinner = function (userChoice, computerChoice) {
         } else {
             return 'You won!'
         }
+    } else {
+        return 'ERROR! MAKE ANOTHER CHOICE'
     }
     
 }
 
 // function to start the game and log results 
 function playGame() {
-    const userChoice = getUserChoice('ROCK');
+    const userChoice = getUserChoice('PAPER');
     const computerChoice = getComputerChoice();
     console.log('You threw: ' + userChoice);
     console.log('The computer threw: ' + computerChoice);
