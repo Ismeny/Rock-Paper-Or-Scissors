@@ -17,7 +17,7 @@ function getComputerChoice() {
     // get a random whole number between 0 and 2
     Math.random(Math.floor() * 3)
     // then depending on the number return either rock, paper or scissors
-    switch (0) {
+    switch (1) {
         case 0: 
          return 'rock';
         case 1:
