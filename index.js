@@ -13,9 +13,9 @@ const getUserChoice = userInput =>  {
 //function declaration FOR COMPUTER to choose rock, paper, or scissors
 function getComputerChoice() {
     // get a random whole number between 0 and 2
-    Math.random(Math.floor() * 3)
+    const randomNumber = Math.floor(Math.random() * 3);
     // then depending on the number return either rock, paper or scissors
-    switch (0) {
+    switch (randomNumber) {
         case 0: 
          return 'rock';
         case 1:
@@ -54,7 +54,7 @@ const determineWinner = function (userChoice, computerChoice) {
 
 // function to start the game and log results 
 function playGame() {
-    const userChoice = getUserChoice('scissors');
+    const userChoice = getUserChoice('ROCK');
     const computerChoice = getComputerChoice();
     console.log('You threw: ' + userChoice);
     console.log('The computer threw: ' + computerChoice);
