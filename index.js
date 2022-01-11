@@ -12,7 +12,7 @@ const getUserChoice = userInput =>  {
 // should print 'paper'
 console.log(getUserChoice('PAPER'))
 
-//function FOR COMPUTER to choose rock, paper, or scissors
+//function declaration FOR COMPUTER to choose rock, paper, or scissors
 function getComputerChoice() {
     // get a random whole number between 0 and 2
     Math.random(Math.floor() * 3)
@@ -57,3 +57,12 @@ const determineWinner = function (userChoice, computerChoice) {
 }
 // should print the game is a tie
 console.log(determineWinner('scissors', 'scissors'));
+
+// function to start the game and log results 
+function playGame() {
+    const userChoice = getUserChoice('scissors');
+    const computerChoice = getComputerChoice();
+    console.log('You threw: ' + userChoice);
+    console.log('The computer threw: ' + computerChoice);
+}
+
